@@ -11,7 +11,7 @@ class Inicjator(models.Model):
     nazwisko = models.CharField(max_length = 50)
     email = models.CharField(max_length = 50)
     haslo = models.CharField(max_length = 500)
-    indeks = models.PositiveSmallIntegerField()
+    indeks = models.PositiveSmallIntegerField(null = True)
 
     rola = models.CharField(
 		max_length = 20, 

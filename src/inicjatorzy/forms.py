@@ -12,7 +12,7 @@ class InicjatorForm(forms.ModelForm):
  #    haslo = models.CharField(max_length = 500)
  #    indeks = models.PositiveSmallIntegerField()
 
-    rola = forms.ChoiceField(label="Rola")
+    # rola = forms.ChoiceField(label="Rola")
     email = forms.EmailField(label="Email")
     imie = forms.CharField(label="Imię")
     nazwisko = forms.CharField(label="Nazwisko")
