@@ -1,0 +1,68 @@
+html{
+
+}
+body{
+  margin: 0;
+}
+header{
+	/*border-radius: 0 0 25px 25px;*/
+  	background: #B32216;
+  	padding: 20px; 
+  	width: auto;
+  	height: 6%;
+  	margin: 0px; 
+	/*margin-bottom: 10px;*/
+}
+nav{
+	border-radius: 0 0 25px 25px;
+  	background: #B32216;
+  	padding: 10px;
+  	padding-left: 30px;
+  	width: auto;
+  	height: 7%;
+  	margin: 0px;
+  	color: white;
+  	margin-bottom: 10px;
+}
+
+div{
+	color : white;
+  display: block;
+  position: relative;
+}
+
+p{
+  margin: 0;
+}
+.wraper{
+  float: left;
+  width: 100%; 
+  padding-left: 2%;
+  padding-right: : 2%;
+}
+.leftbar{
+  
+  padding: 10px;
+	width: 15%;
+	background: #B32216;
+	align-content: left;
+	margin-right: 1%;
+}
+.centerdiv{
+  padding: 15px;
+	width: 75%;
+  background: gray;
+}
+.centerdiv, .leftbar{
+  display: block;
+  border-radius: 8px;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  .leftbar, .centerdiv {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+}
