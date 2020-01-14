@@ -18,10 +18,12 @@ from django.urls import path
 
 from pages.views import home_view
 from kursy.views import kurs_detail_view, kurs_create_view
+from inicjatorzy.views import inicjator_create_view
 
 urlpatterns = [
 	path('', home_view, name ='home'),
 	path('kurs/', kurs_detail_view),
 	path('create/', kurs_create_view),
+    path('createinicjator/', inicjator_create_view),
     path('admin/', admin.site.urls),
 ]
