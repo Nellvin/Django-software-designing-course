@@ -1,4 +1,5 @@
 from django.db import models
+from planstudiow.models import PlanStudiow 
 from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
@@ -14,7 +15,7 @@ class Kurs(models.Model):
     	PROJEKT = 'PROJ', _('Projekt')
     	CWIECZENIE = 'CW', _('Ćwiczenie')
 
-    kodKursu = models.CharField(max_length = 8)
+    kodKursu = models.CharField(max_length = 15)
     nazwa = models.TextField()
     liczbaECTS = models.PositiveSmallIntegerField(blank=False, null=False)
     formaZaliczenia = models.CharField(
@@ -29,4 +30,15 @@ class Kurs(models.Model):
     	)
     liczbaGodzin = models.PositiveSmallIntegerField(blank=False, null=False)
     kartaKursu =  models.CharField(max_length = 80)
+    planstudiow = models.ForeignKey(
+		PlanStudiow,
+		on_delete = models.SET_NULL,
+		blank = False,
+		null = True,
+		)
+    # plikKaraKursu = models.FileField()
+
+    def __str__(self):
+    	return self.nazwa+ ' ' + self.formaZajec[:1]
+
 	

@@ -12,7 +12,7 @@ def kurs_create_view(request):
 	context={
 		"form" : form
 	}
-	return render(request, "kursy/kurs_create.html",context) 
+	return render(request, "kursy/kurs_create.html",	) 
 
 # def kurs_create_view(request):
 # 	if request.method=="POST":

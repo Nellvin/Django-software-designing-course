@@ -1,8 +1,71 @@
 html{
 
 }
+a{
+  text-decoration:none;
+  color: black;
+}
+ul, li{
+  color: red;
+}
 body{
   margin: 0;
+  font-family: arial;
+}
+p{
+  padding: 5px;
+}
+table{
+  border-color: gray;
+  border: 1px solid;
+  border-spacing:0;
+}
+tbody{
+
+}
+.tabZamiennikow{
+  border: solid 1px gray;
+  margin-left: 20px; 
+  margin-top: 20px; 
+}
+tr,td{
+  color: black;
+  
+}
+tr{
+  padding: 5px;
+}
+th{
+  text-align: left;
+  min-width: 80px;
+  background-color: #B32216;
+  color: white;
+  font-weight: normal;
+  padding: 5px;
+}
+tbody,tr{
+  border: 5px solid black;
+}
+.kurs_cell{
+  border-bottom: solid 1px gray;
+  padding: 5px;
+  padding-bottom:7px;
+  padding-top:7px;
+}
+.zamiennik_descrpit{
+  margin: 15px;
+  border-bottom: 0;
+}
+.zamiennik_descrpit td{
+  border-bottom: 0;
+  padding: 5px;
+}
+.zamiennik_short_desc{
+  padding-left: 35px;
+}
+tr td{
+  border-bottom: solid 1px black;
+  border-color: black;
 }
 header{
 	/*border-radius: 0 0 25px 25px;*/
@@ -34,9 +97,61 @@ div{
 p{
   margin: 0;
 }
+select, input{
+  padding: 5px;
+  margin: 5px;
+
+}
+label{
+  padding-right: 10px;
+  width: 100px;
+  color: black;
+  font-family: arial;
+}
+.actionResult{
+  /*margin-left: 250px;*/
+  position: absolute;
+  color: #B32216;
+  size: 300px;
+  font-size: 18px;
+  left: 650px;
+  top: 130px;
+  width: 500px;
+}
+.zamiennk_buttons_red{
+  margin-left: 250px;
+  background: #B32216;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  /*float: right;*/
+  /*position: sticky;*/
+
+}
+.butt1{
+  position: absolute;
+  left: 650px;
+  top: 100px;
+}
+.butt2{
+  position: absolute;
+  left: 650px;
+  top: 150px;
+}
+.butt3{
+  position: absolute;
+  left: 650px;
+  top: 200px;
+}
+.center{
+  text-align: center;
+}
 .wraper{
   float: left;
-  width: 100%; 
+  width: 98%; 
+  height: 100%;
   padding-left: 2%;
   padding-right: : 2%;
 }
@@ -47,16 +162,49 @@ p{
 	background: #B32216;
 	align-content: left;
 	margin-right: 1%;
+  min-height: 319px;
 }
 .centerdiv{
   padding: 15px;
 	width: 75%;
-  background: gray;
+  min-height: 100%;
+  background: white;
+  border: 2px;
+  border-color: lightgray;
+  border-style: solid;
 }
 .centerdiv, .leftbar{
   display: block;
   border-radius: 8px;
   float: left;
+}
+#result{
+  
+  clear: left;
+}
+.correct_input{
+  border: 2px solid green;
+  border-radius: 4px;
+}
+.zamiennik{
+  color: black;
+  border: solid 1px;
+  border-color: gray;
+}
+.zamiennik_nazwa{
+  width: 200px;
+  margin-left: 15px;
+}
+.zamiennik_kod{
+  /*margin-left: 155px;*/
+  width: 300px
+}
+.zamiennik_inicjator{
+  width: 400px;
+  text-align: right;
+}
+.zamiennik_nazwa, .zamiennik_kod{
+  padding:35px; 
 }
 
 @media (max-width: 600px) {

@@ -1,4 +1,4 @@
-{% extends 'base.html'%}
+<!-- {% extends 'base.html'%}
 
 {%block content%}
 <form action="." method="POST">{% csrf_token %}
@@ -7,4 +7,35 @@
 	</div>
 	<input type="submit" name="save">
 </form>
-{% endblock  %}
+{% endblock  %} -->
+
+	{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zamienniki</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	<header>
+		<img src="{% static 'logo.png' %}">
+	</header>
+	<nav>
+		<p>Zamienniki > Oczekujące</p>
+	</nav>
+	<div class="wraper">
+
+		<div class="leftbar">
+			<p>lista</p>
+		</div>
+		<div class="centerdiv">
+<form action="." method="POST">{% csrf_token %}
+	<div class="wraper">
+		{{ form.as_p}}
+	</div>
+<!-- 	<input type="submit" name="save"> -->
+</form>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,10 +1,45 @@
-{% extends 'base.html'%}
 
-{%block content%}
+	{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zamienniki</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<style type="text/css">
+		{% if label == True %}
+		input[type=text],input[type=email],input[type=password], select{
+  			border: 2px solid green;
+ 				 border-radius: 4px;
+		{% endif %}
+
+	</style>
+</head>
+<body>
+	<header>
+		<img src="{% static 'logo.png' %}">
+	</header>
+	<nav>
+		<p>Inicjatorzy > nowy ...</p>
+	</nav>
+	<div class="wraper">
+
+		<div class="leftbar">
+			<p>* Inicjatorzy</p>
+			<p>   &nbsp;&nbsp;&nbsp;&nbsp;-Lista</p>
+			<p>   &nbsp;&nbsp;&nbsp;&nbsp;-nowy..</p>
+			<p>* Uczelnia</p>
+			<p>* Plan studiów</p>
+		</div>
+		<div class="centerdiv">
 <form action="." method="POST">{% csrf_token %}
 	<div class="wraper">
 		{{ form.as_p}}
 	</div>
-	<input type="submit" name="save">
+	<input type="submit" name="save" id="save_button" class="zamiennk_buttons_red">
+	<label id="result" name="result"  style=color:green;visibility:{% if label == True %}visible{% else %}hidden {% endif %} >Dodano nowego inicjatora	</label>
 </form>
-{% endblock  %}
+		</div>
+	</div>	
+</body>
+</html>
+

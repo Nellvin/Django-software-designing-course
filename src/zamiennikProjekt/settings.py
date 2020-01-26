@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'kursy',
     'inicjatorzy',
     'pages',
+    'planstudiow',
 ]
 
 MIDDLEWARE = [
