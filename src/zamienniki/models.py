@@ -1,3 +1,6 @@
+"""
+Komenarz modułu
+"""
 from django.db import models
 from inicjatorzy.models import Inicjator
 from django.db.models import Sum
@@ -6,6 +9,21 @@ from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 class Zamiennik(models.Model):
+	"""
+	Klasa ta reprezentuje zamiennik
+
+	Obiekty tej klasy będą rozpatrywane jako propozycje zamienników kursów na studiach.
+	Przy tworzeniu automatycznie ich status jest ustawiany na *Oczekujący*
+
+	:param statusZamiennika: reprezentuje w jakim momencie rozpatrywania znajduje sie zamiennik
+	:type statusZamiennika: enum:'Status'
+	:param inicjator: osoba, która zaproponowała dany zamiennik
+	:type inicjator: class:'Inicjator'
+	:param kursZamieniany: kurs jaki zamiennik ma zamieniać 
+	:type kursZamieniany: class:'Kurs'
+	:param kursyZamiennika: kursy, które które wchodzą w skład zamiennika
+	:type kursyZamiennika: list of class :'Kurs'
+	"""
 	class Status(models.TextChoices):
 		OCZEKUJACY = 'OCZEK', _('Oczekujący')
 		ODRZUCONY = 'ODRZ', _('Odrzucony')
@@ -67,7 +85,7 @@ class Zamiennik(models.Model):
 
 	def getFormaZaliczenia(self):
 		forma = self.kursyZamiennika.first().get_formaZaliczenia_display()
-		if (fomra == None):
+		if (forma == None):
 			return ""
 		return forma
 
