@@ -2,7 +2,6 @@ from django.db import models
 from inicjatorzy.models import Inicjator
 from django.db.models import Sum
 from kursy.models import Kurs 
-
 from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
@@ -39,9 +38,6 @@ class Zamiennik(models.Model):
 		related_name = "kursyWchodząceWSkładZamiennika"
 		)
 
-	
-
-
 	def zaakceptuj_zamiennik(self):
 		self.statusZamiennika = 'AKCP'
 		try:
@@ -64,13 +60,22 @@ class Zamiennik(models.Model):
 		pass
 
 	def sumaECTS(self):
-		return (self.kursyZamiennika.aggregate(Sum('liczbaECTS'))['liczbaECTS__sum'])
+		sum = self.kursyZamiennika.aggregate(Sum('liczbaECTS'))['liczbaECTS__sum']
+		if(sum == None):
+			return 0
+		return (sum)
 
 	def getFormaZaliczenia(self):
-		return self.kursyZamiennika.first().get_formaZaliczenia_display()
+		forma = self.kursyZamiennika.first().get_formaZaliczenia_display()
+		if (fomra == None):
+			return ""
+		return forma
 
 	def getZZU(self):
-		return (self.kursyZamiennika.aggregate(Sum('liczbaGodzin'))['liczbaGodzin__sum'])
+		ZZU = self.kursyZamiennika.aggregate(Sum('liczbaGodzin'))['liczbaGodzin__sum']
+		if(ZZU == None):
+			return 0
+		return (ZZU)
 
 	def getFormaZajec(self):
 		liczbaFormZajęć = self.kursyZamiennika.values('formaZajec').distinct()

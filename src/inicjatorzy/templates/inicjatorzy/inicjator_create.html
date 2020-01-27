@@ -6,7 +6,7 @@
 	<title>Zamienniki</title>
 	<link rel="stylesheet" href="{% static 'style.css' %}">
 	<style type="text/css">
-		{% if label == True %}
+		{% if bool_validate == True %}
 		input[type=text],input[type=email],input[type=password], select{
   			border: 2px solid green;
  				 border-radius: 4px;
@@ -36,7 +36,7 @@
 		{{ form.as_p}}
 	</div>
 	<input type="submit" name="save" id="save_button" class="zamiennk_buttons_red">
-	<label id="result" name="result"  style=color:green;visibility:{% if label == True %}visible{% else %}hidden {% endif %} >Dodano nowego inicjatora	</label>
+	<label id="result" name="result"  style=color:green;visibility:{% if bool_validate == True %}visible{% else %}hidden {% endif %} >Dodano nowego inicjatora	</label>
 </form>
 		</div>
 	</div>	

@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import FileResponse, Http404
 from django.db.models import Sum
-
 from .models import Zamiennik
+
 def pdf_view(request):
     # try:
         return FileResponse(open('C:/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/W08_20.pdf', 'rb'), content_type='application/pdf')
@@ -23,10 +23,10 @@ def zamiennik_szczegoly(request,id):
     	instance.statusZamiennika= 'OCZEK'
     	instance.save()
     if 'odrz' in request.POST:
-    	instance.statusZamiennika= 'ODRZ'
+    	instance.odrzuc_zamiennik()
     	instance.save()
     if 'akcept' in request.POST:
-    	instance.statusZamiennika= 'AKCP'
+    	instance.zaakceptuj_zamiennik()
     	instance.save()
 
     nazwaK = instance.kursZamieniany.nazwa

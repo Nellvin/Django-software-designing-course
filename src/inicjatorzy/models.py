@@ -21,9 +21,7 @@ class Inicjator(models.Model):
 
     def save(self, *args, **kwargs):
         if(self.rola == 'ST'):
-        	indeks = self.email[0:6]
-	        if(self.isNum(indeks)):
-	             self.indeks=indeks
+            self.indeks=self.extract_indeks()
         super(Inicjator, self).save(*args, **kwargs)
 
     def isNum(self,data):
@@ -33,6 +31,12 @@ class Inicjator(models.Model):
         	return True
     	except ValueError:
         	return False
+
+    def extract_indeks(self):
+        indeks = self.email[0:6]
+        if(self.isNum(indeks)):
+            return indeks
+        pass
 
     def __str__(self):
     	return self.imie + ' ' + self.nazwisko

@@ -4,15 +4,15 @@ from .models import Inicjator
 from .forms import InicjatorForm
 
 def inicjator_create_view(request):
-	label = False
+	bool_validate = False
 	form = InicjatorForm(request.POST or None)
 	if form.is_valid():
 		form.save()
 		form = InicjatorForm()
-		label = True
+		bool_validate = True
 
 	context={
 		"form" : form,
-		"label" : label
+		"bool_validate" : bool_validate
 	}
 	return render(request, "inicjatorzy/inicjator_create.html",context) 
