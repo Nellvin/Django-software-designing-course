@@ -4,24 +4,24 @@ from kursy.models import Kurs
 
 # Create your tests here.
 class TestModels(TestCase):
-
+	# Given
 	def setUp(self):
 		self.zamiennik1 = Zamiennik.objects.create(
 			statusZamiennika='OCZEK'
 			)
 
 	def test_zaakaceptuj_zamiennik(self):
-		self.assertEquals(self.zamiennik1.statusZamiennika,'OCZEK')
+		
 		self.zamiennik1.zaakceptuj_zamiennik()
 		self.assertEquals(self.zamiennik1.statusZamiennika, 'AKCP')
 
 	def test_odrzuc_zamiennik(self):
-		self.assertEquals(self.zamiennik1.statusZamiennika,'OCZEK')
+		
 		self.zamiennik1.odrzuc_zamiennik()
 		self.assertEquals(self.zamiennik1.statusZamiennika, 'ODRZ')
 
 	def test_sumy_ectsow(self):
-		self.assertEquals(self.zamiennik1.sumaECTS(),0)
+		
 		kurs1 = Kurs.objects.create(
 			liczbaECTS = 5,
 			liczbaGodzin =15)

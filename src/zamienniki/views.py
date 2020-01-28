@@ -1,13 +1,24 @@
 from django.shortcuts import render
 from django.http import FileResponse, Http404
 from django.db.models import Sum
-from .models import Zamiennik
 
-def pdf_view(request):
-    # try:
-        return FileResponse(open('C:/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/W08_20.pdf', 'rb'), content_type='application/pdf')
-    # except FileNotFoundError:
-    #     raise Http404()
+from .models import Zamiennik
+import os
+
+def pdf_view(request, id):
+
+    zamienniki = Zamiennik.objects.get(id=id)
+    ID=str("0000000"+str(id)) 
+    file1 = zamienniki.kursZamieniany.kartaKursu
+    file2 = zamienniki.kursyZamiennika.first().kartaKursu
+    # file1 = 'W8_2017_Bazy_danych.pdf'
+    # file2 = 'W4_2017_Bazy_danych.pdf'
+    context = {
+        "file1" : file1,
+        "file2" : file2,
+        "id" : ID
+    }
+    return render(request, "pdf.html", context)
 
 def list_zamienniki(request):
     
@@ -15,7 +26,7 @@ def list_zamienniki(request):
     context = {
         "obj_list" : query_set
     }
-    return render(request, "zamienniki/list_zamienniki.html",context)
+    return render(request, "list_zamienniki.html",context)
 
 def zamiennik_szczegoly(request,id):
     instance = Zamiennik.objects.get(id=id)
@@ -33,13 +44,17 @@ def zamiennik_szczegoly(request,id):
     kodK = instance.kursZamieniany.kodKursu
     imieI = instance.inicjator.imie
     nazwiskoI = instance.inicjator.nazwisko
-    ECTS = instance.sumaECTS()
+    ECTS = instance.kursZamieniany.ECTS
+    sumECTS = instance.sumaECTS()
     zaliczenie = instance.getFormaZaliczenia()
-    stopien = instance.getStopienStudiow()
-    ZZU = instance.getZZU()
-    formaZajec = instance.getFormaZajec()
+    stopien = instance.kursZamieniany.planstudiow.get_stpienStudiow_display()
+    ZZU = instance.kursZamieniany.liczbaGodzin
+    ZZUZamiennikow = instance.getZZU()
+    formaZajec = instance.kursZamieniany.get_formaZajec_display()
+    formaZajecZamiennikow = instance.getFormaZajec()
     status = instance.get_statusZamiennika_display()
     setKursowZamiennika = instance.kursyZamiennika.all()
+
     context = {
     	"instance": instance,
         "nazwaK" : nazwaK,
@@ -55,5 +70,5 @@ def zamiennik_szczegoly(request,id):
         "setKursowZamiennika" : setKursowZamiennika,
         "id" : str("0000000"+str(instance.id)) 
     }
-    return render(request, "zamienniki/zamiennik_details.html",context)
+    return render(request, "zamiennik_details.html",context)
 

@@ -1,0 +1,141 @@
+	{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zamienniki</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	<header>
+		<img src="{% static 'logo.png' %}">
+	</header>
+	<nav>
+		<p>Zamienniki > Oczekujące > Zamiennik: #{{ id|rjust:"8" }}</p>
+	</nav>
+	<div class="wraper">
+
+		<div class="leftbar">
+			<p>* Zamienniki</p>
+			<p>   &nbsp;&nbsp;- Zaakceptowane</p>
+			<p style="">   &nbsp;&nbsp;- Oczekujące..</p>
+			<p>   &nbsp;&nbsp;- Odrzucone</p>
+		</div>
+		<div class="centerdiv" >
+			<table class="zamiennik_short_desc">
+			
+				
+					
+						<tr>
+							<td>
+					<p class="zamiennik_nazwa">{{nazwaK}}</p>
+							</td>
+							<td>
+					<p class="zamiennik_kod">{{kodK}}</p>
+							</td>
+							<td>
+					<p class="zamiennik_inicjator">Inicjator: {{imieI}} {{nazwiskoI}}</p>
+							</td>
+						</tr>
+					</table>
+					<table class="zamiennik_descrpit">
+						<tr>
+							<td>
+								Liczba ECTS: {{ECTS}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Sposób zaliczenia: {{zaliczenie}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Stopień studiów: {{stopien	}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								ZZU: {{ZZU}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Forma zajęć: {{formaZajec}}
+							</td>
+						</tr>
+						<tr>
+							<td id ="status">
+								Status: {{status}}
+							</td>
+						</tr>
+					</table>
+
+					<label id="actionResult" class="actionResult"></label>
+					<form action="./{{instance.id}}" method="POST">{% csrf_token %}
+						
+					<input type="submit" id="save_button1" class="zamiennk_buttons_red butt1" name="oczek" value="oczekujący">
+					<input type="submit" id="save_button2" class="zamiennk_buttons_red butt2" name="odrz" value="odrzuć">
+					<input type="submit" id="save_button3" class="zamiennk_buttons_red butt3" name="akcept" value="akceptuj">
+					</form>
+					<table class="tabZamiennikow">
+					<thead>
+						<tr>
+							<th>Nazwa</th>
+							<th>Kod</th>
+							<th class="center">ECTS</th>
+							<th class="center">Sposób<br> zaliczenia</th>
+							<th class="center">Stopień <br>studiów</th>
+							<th class="center">ZZU</th>
+							<th class="center">Forma<br> zajęć</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for k in setKursowZamiennika %}
+						<tr>
+							<td class="kurs_cell">
+								{{k.nazwa}}
+							</td>
+							<td class="kurs_cell">
+								{{k.kodKursu}}
+							</td>
+							<td class="kurs_cell center">
+								{{k.liczbaECTS}}
+							</td>
+							<td class="kurs_cell center">
+								{{k.get_formaZaliczenia_display|slice:"0:1"}}
+							</td>
+							<td class="kurs_cell center">
+								{{stopien}}
+							</td>
+							<td class="kurs_cell center">
+								{{k.liczbaGodzin}}
+							</td>
+							<td class="kurs_cell center">
+								{{k.get_formaZajec_display|slice:"0:1"}}
+							</td>
+						</tr>
+						{% endfor %}
+						</tbody>
+					</table>
+					<a href='{% url "pdf" id=id %}'>
+						<button class="zamiennk_buttons_red">Porównaj karty</button>
+					</a>
+					
+		</div>
+	</div>
+	<script>
+		var myInput = document.getElementById("status");
+
+		if(myInput.textContent.trim()== 'Status: Oczekujący'){
+			document.getElementById("save_button2").style.visibility = "hidden";
+			document.getElementById("actionResult").style.visibility = "hidden";
+		}else if(myInput.textContent.trim()== 'Status: Zaakceptowany'){
+			document.getElementById("actionResult").textContent = "Zaaktualizowano status zamiennika: zaakceptowany"
+		}else{
+			document.getElementById("actionResult").textContent = "Zaaktualizowano status zamiennika: odrzucony"
+		}
+
+	</script>	
+</body>
+</html>
+

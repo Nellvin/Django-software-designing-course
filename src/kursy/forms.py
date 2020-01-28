@@ -11,7 +11,7 @@ class KursForm(forms.ModelForm):
 		fields =[
 			'kodKursu', 
 			'nazwa',	
-			'liczbaECTS'
+			'ECTS'
 		]
 
 class RawKursForm(forms.Form):

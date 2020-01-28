@@ -1,0 +1,51 @@
+	{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zamienniki</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	<header>
+		<img src="{% static 'logo.png' %}">
+		<p style="position: absolute; right: 100px; top: 70px; color: white;">Jan Kowalski  V</p>
+	</header>
+	<nav>
+		<p>Zamienniki > Oczekujące </p>
+	</nav>
+	<div class="wraper">
+
+		<div class="leftbar">
+			<p>* Zamienniki</p>
+			<p>   &nbsp;&nbsp;- Zaakceptowane</p>
+			<p style="">   &nbsp;&nbsp;- Oczekujące..</p>
+			<p>   &nbsp;&nbsp;- Odrzucone</p>
+		</div>
+		<div class="centerdiv" style="padding-left:50px;">
+					<table style="border: 1px solid ">
+			{% for obj in obj_list%}
+				
+					
+						<tr>
+							<td>
+								<a href='{% url "zamiennik_detail" id=obj.id %}'>
+					<p class="zamiennik_nazwa">{{obj.kursZamieniany.nazwa}}</p></a>
+							</td>
+							<td>
+								<a href='{% url "zamiennik_detail" id=obj.id %}'>
+					<p class="zamiennik_kod">{{obj.kursZamieniany.kodKursu}}</p></a>
+							</td>
+							<td>
+								<a href='{% url "zamiennik_detail" id=obj.id %}'>
+					<p class="zamiennik_inicjator">Inicjator: {{obj.inicjator.imie}} {{ obj.inicjator.nazwisko}}</p></a>
+							</td>
+						</tr>
+				
+			{% endfor%}
+					</table>
+					
+		</div>
+	</div>	
+</body>
+</html>
+

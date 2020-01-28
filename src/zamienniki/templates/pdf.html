@@ -1,0 +1,32 @@
+
+		{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zamienniki</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	<header>
+		<img src="{% static 'logo.png' %}">
+		<p style="position: absolute; right: 100px; top: 70px; color: white;">Jan Kowalski  V</p>
+	</header>
+	<nav>
+		<p>Zamienniki > Oczekujące > Zamiennik: #{{ id|rjust:"8" }}</p>
+	</nav>
+	<div class="wraper">
+
+		<div class="leftbar">
+			<p>* Zamienniki</p>
+			<p>   &nbsp;&nbsp;- Zaakceptowane</p>
+			<p style="">   &nbsp;&nbsp;- Oczekujące..</p>
+			<p>   &nbsp;&nbsp;- Odrzucone</p>
+		</div>
+		<div class="centerdiv" style="padding-left:50px;">
+		 	<iframe  src="{% static file1 %}" width="45%" height="500px"></iframe>
+		 	<iframe  src="{% static file2 %}" width="45%" height="500px"></iframe>
+		</div>
+	</div>	
+</body>
+</html>
+

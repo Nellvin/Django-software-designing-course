@@ -17,7 +17,7 @@ class Kurs(models.Model):
 
     kodKursu = models.CharField(max_length = 15)
     nazwa = models.TextField()
-    liczbaECTS = models.PositiveSmallIntegerField(blank=False, null=False)
+    ECTS = models.PositiveSmallIntegerField(blank=False, null=False)
     formaZaliczenia = models.CharField(
     	max_length = 20, 
     	choices=FormaZaliczenia.choices,

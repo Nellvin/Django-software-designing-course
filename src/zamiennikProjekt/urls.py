@@ -23,11 +23,11 @@ from inicjatorzy.views import inicjator_create_view
 
 urlpatterns = [
 	path('', home_view, name ='home'),
-    path('pdf/',pdf_view),
 	path('kurs/', kurs_detail_view),
 	path('create/', kurs_create_view),
     path('createinicjator/', inicjator_create_view),
     path('admin/', admin.site.urls),
     path('zamienniki/',list_zamienniki),
-    path('zamiennik/<int:id>', zamiennik_szczegoly, name='zamiennik_detail')
+    path('zamiennik/<int:id>/', zamiennik_szczegoly, name='zamiennik_detail'),
+    path('zamiennik/<int:id>/pdf/',pdf_view, name="pdf"),
 ]
