@@ -25,7 +25,7 @@ SECRET_KEY = '%m+=)8a(4f^em5$2ab(m1nz9t=)%cbju2z@ftz3*!e7p^2jacie'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nellvin.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition

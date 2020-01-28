@@ -8,6 +8,7 @@
 <body>
 	<header>
 		<img src="{% static 'logo.png' %}">
+		<p style="position: absolute; right: 100px; top: 70px; color: white;">Jan Kowalski  V</p>
 	</header>
 	<nav>
 		<p>Zamienniki > Oczekujące > Zamiennik: #{{ id|rjust:"8" }}</p>
@@ -33,7 +34,7 @@
 					<p class="zamiennik_kod">{{kodK}}</p>
 							</td>
 							<td>
-					<p class="zamiennik_inicjator">Inicjator: {{imieI}} {{nazwiskoI}}</p>
+					<p class="zamiennik_inicjator">Inicjator: {{imieI}} {{nazwiskoI}} {{indeksI}}</p>
 							</td>
 						</tr>
 					</table>
@@ -71,7 +72,7 @@
 					</table>
 
 					<label id="actionResult" class="actionResult"></label>
-					<form action="./{{instance.id}}" method="POST">{% csrf_token %}
+					<form action="../{{instance.id}}/" method="POST">{% csrf_token %}
 						
 					<input type="submit" id="save_button1" class="zamiennk_buttons_red butt1" name="oczek" value="oczekujący">
 					<input type="submit" id="save_button2" class="zamiennk_buttons_red butt2" name="odrz" value="odrzuć">
@@ -99,7 +100,7 @@
 								{{k.kodKursu}}
 							</td>
 							<td class="kurs_cell center">
-								{{k.liczbaECTS}}
+								{{k.ECTS}}
 							</td>
 							<td class="kurs_cell center">
 								{{k.get_formaZaliczenia_display|slice:"0:1"}}
@@ -115,6 +116,26 @@
 							</td>
 						</tr>
 						{% endfor %}
+						<tr>
+							<td class="kurs_cell" colspan="2">
+								<b>Podsumowanie<b>
+							</td>
+							<td class="kurs_cell center">
+								<b>{{sumECTS}}</b>
+							</td>
+							<td class="kurs_cell center">
+								<b>{{zaliczenie|slice:"0:1"}}</b>
+							</td>
+							<td class="kurs_cell center">
+								<b>{{stopien}}</b>
+							</td>
+							<td class="kurs_cell center">
+								<b>{{ZZUZamiennikow}}</b>
+							</td>
+							<td class="kurs_cell center">
+							</td>
+
+						</tr>
 						</tbody>
 					</table>
 					<a href='{% url "pdf" id=id %}'>

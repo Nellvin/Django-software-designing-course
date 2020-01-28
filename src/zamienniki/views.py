@@ -44,6 +44,7 @@ def zamiennik_szczegoly(request,id):
     kodK = instance.kursZamieniany.kodKursu
     imieI = instance.inicjator.imie
     nazwiskoI = instance.inicjator.nazwisko
+    indeksI = instance.inicjator.indeks
     ECTS = instance.kursZamieniany.ECTS
     sumECTS = instance.sumaECTS()
     zaliczenie = instance.getFormaZaliczenia()
@@ -61,10 +62,13 @@ def zamiennik_szczegoly(request,id):
         "kodK" : kodK,
         "imieI" : imieI,
         "nazwiskoI" : nazwiskoI,
+        "indeksI" : indeksI,
         "ECTS" : ECTS,
+        "sumECTS" : sumECTS,
         "zaliczenie" : zaliczenie,
         "stopien" : stopien,
         "ZZU" : ZZU,
+        "ZZUZamiennikow" : ZZUZamiennikow,
         "formaZajec" : formaZajec,
         "status": status,
         "setKursowZamiennika" : setKursowZamiennika,
