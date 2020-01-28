@@ -25,9 +25,9 @@ urlpatterns = [
 	path('', home_view, name ='home'),
 	path('kurs/', kurs_detail_view),
 	path('create/', kurs_create_view),
-    path('createinicjator/', inicjator_create_view),
+    path('createinicjator/', inicjator_create_view, name="create_inicjator"),
     path('admin/', admin.site.urls),
-    path('zamienniki/',list_zamienniki),
+    path('zamienniki/',list_zamienniki, name="lista_zamiennikow"),
     path('zamiennik/<int:id>/', zamiennik_szczegoly, name='zamiennik_detail'),
     path('zamiennik/<int:id>/pdf/',pdf_view, name="pdf"),
 ]

@@ -1,0 +1,28 @@
+	{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zamienniki</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	<header>
+		<img src="{% static 'logo.png' %}">
+	</header>
+	<nav>
+		<p> </p>
+	</nav>
+	<div class="wraper">
+
+		<div class="leftbar">
+
+		</div>
+		<div class="centerdiv" >
+			<a href='{% url "create_inicjator"%}'><button class="zamiennk_buttons_red" style="margin-top: 100px; ">Utwórz Inicjatora</button></a>
+			<a href='{% url "lista_zamiennikow"%}'><button class="zamiennk_buttons_red" style="margin-top: 100px; margin-bottom: 100px;">Rozpatrz zamiennik</button></a>
+			
+		</div>
+	</div>
+</body>
+</html>
+

@@ -25,7 +25,7 @@ SECRET_KEY = '%m+=)8a(4f^em5$2ab(m1nz9t=)%cbju2z@ftz3*!e7p^2jacie'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nellvin.pythonanywhere.com']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
 #own
     'zamienniki',
     'kursy',
@@ -125,3 +125,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/nellvin/Django-software-designing-course/src/static'
