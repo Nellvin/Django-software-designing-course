@@ -1,7 +1,13 @@
-docs
-====
+src
+===
 
 .. toctree::
    :maxdepth: 4
 
-   conf
+   inicjatorzy
+   kursy
+   manage
+   pages
+   planstudiow
+   zamiennikProjekt
+   zamienniki

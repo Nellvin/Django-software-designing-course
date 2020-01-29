@@ -1,18 +1,14 @@
-from django.shortcuts import render
 from django.http import FileResponse, Http404
+from django.shortcuts import render
 from django.db.models import Sum
 
 from .models import Zamiennik
-import os
 
 def pdf_view(request, id):
-
     zamienniki = Zamiennik.objects.get(id=id)
     ID=str("0000000"+str(id)) 
     file1 = zamienniki.kursZamieniany.kartaKursu
     file2 = zamienniki.kursyZamiennika.first().kartaKursu
-    # file1 = 'W8_2017_Bazy_danych.pdf'
-    # file2 = 'W4_2017_Bazy_danych.pdf'
     context = {
         "file1" : file1,
         "file2" : file2,

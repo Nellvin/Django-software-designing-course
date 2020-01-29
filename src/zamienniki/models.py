@@ -19,14 +19,11 @@ class Zamiennik(models.Model):
     Obiekty tej klasy będą rozpatrywane jako propozycje zamienników kursów na studiach.
     Przy tworzeniu automatycznie ich status jest ustawiany na *Oczekujący*
 
-    :param statusZamiennika: reprezentuje w jakim momencie rozpatrywania znajduje sie zamiennik
-    :type statusZamiennika: enum:'Status'
-    :param inicjator: osoba, która zaproponowała dany zamiennik
-    :type inicjator: class:'Inicjator'
-    :param kursZamieniany: kurs jaki zamiennik ma zamieniać
-    :type kursZamieniany: class:'Kurs'
-    :param kursyZamiennika: kursy, które które wchodzą w skład zamiennika
-    :type kursyZamiennika: list of class :'Kurs'
+    Args:
+        statusZamiennika: reprezentuje w jakim momencie rozpatrywania znajduje sie zamiennik
+        inicjator: osoba, która zaproponowała dany zamiennik
+        kursZamieniany: kurs jaki zamiennik ma zamieniać
+        kursyZamiennika: kursy, które które wchodzą w skład zamiennika
     """
     class Status(models.TextChoices):
         """Emumerator statsu zamiennika"""
@@ -80,7 +77,6 @@ class Zamiennik(models.Model):
         return True
 
     def __str__(self):
-         # (self.kursyZamiennika.aggregate(Sum('ECTS')))
         return 'zamiennik: '+self.kursZamieniany.kodKursu
 
 
@@ -107,8 +103,8 @@ class Zamiennik(models.Model):
 
     def getFormaZajec(self):
         """Funkcja zwraca forme zajęć kursów wchodzących w skład zamiennika"""
-        liczbaFormZajęć = self.kursyZamiennika.values('formaZajec').distinct()
-        if liczbaFormZajęć.count() > 1:
+        liczbaFormZajec = self.kursyZamiennika.values('formaZajec').distinct()
+        if liczbaFormZajec.count() > 1:
             return "grupa kursów"
         return self.kursyZamiennika.first().get_formaZajec_display()
 
