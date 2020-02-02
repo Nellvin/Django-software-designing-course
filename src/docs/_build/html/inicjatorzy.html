@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
   <head>
     <meta charset="utf-8" />
-    <title>inicjatorzy package &#8212; Zamiennik 1 documentation</title>
+    <title>inicjatorzy package &#8212; Zamienniki PWR 1.0 - dokumentacja</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -12,8 +12,10 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Indeks" href="genindex.html" />
+    <link rel="search" title="Szukaj" href="search.html" />
+    <link rel="prev" title="zamienniki" href="zamienniki.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -31,47 +33,201 @@
           <div class="body" role="main">
             
   <div class="section" id="inicjatorzy-package">
-<h1>inicjatorzy package<a class="headerlink" href="#inicjatorzy-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="inicjatorzy.migrations.html">inicjatorzy.migrations package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="inicjatorzy.migrations.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inicjatorzy.migrations.html#inicjatorzy-migrations-0001-initial-module">inicjatorzy.migrations.0001_initial module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inicjatorzy.migrations.html#inicjatorzy-migrations-0002-auto-20200114-1803-module">inicjatorzy.migrations.0002_auto_20200114_1803 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inicjatorzy.migrations.html#inicjatorzy-migrations-0003-auto-20200114-2256-module">inicjatorzy.migrations.0003_auto_20200114_2256 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inicjatorzy.migrations.html#inicjatorzy-migrations-0004-auto-20200121-1944-module">inicjatorzy.migrations.0004_auto_20200121_1944 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inicjatorzy.migrations.html#inicjatorzy-migrations-0005-auto-20200126-1735-module">inicjatorzy.migrations.0005_auto_20200126_1735 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inicjatorzy.migrations.html#module-contents">Module contents</a></li>
-</ul>
-</li>
-</ul>
+<h1>inicjatorzy package<a class="headerlink" href="#inicjatorzy-package" title="Stały odnośnik do tego nagłówka">¶</a></h1>
+<div class="section" id="zobacz">
+<h2>Zobacz<a class="headerlink" href="#zobacz" title="Stały odnośnik do tego nagłówka">¶</a></h2>
 </div>
+<div class="section" id="module-inicjatorzy.models">
+<span id="inicjatorzy-models"></span><h2>inicjatorzy.models<a class="headerlink" href="#module-inicjatorzy.models" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<dl class="class">
+<dt id="inicjatorzy.models.Inicjator">
+<em class="property">class </em><code class="sig-prename descclassname">inicjatorzy.models.</code><code class="sig-name descname">Inicjator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.models.Inicjator" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<p>Reprezentacja osoby, która inicjuje zamiennik</p>
+<p>Osoba ta możę być studentem albo osobą opiniującą. Osoba opiniująca jest zdolna do zmiany 
+statusu zamiennika oraz tworznia propozycji zamiennika. Student jest zdolny jedynie do
+tworznia propozycji zamiennika</p>
+<dl class="simple">
+<dt>imie<span class="classifier">str</span></dt><dd><p>imie inicjatora</p>
+</dd>
+<dt>nazwisko<span class="classifier">str</span></dt><dd><p>nazwisko inicjatora</p>
+</dd>
+<dt>email<span class="classifier">str</span></dt><dd><p>email uniwersytecki inicjatora</p>
+</dd>
+<dt>haslo<span class="classifier">str</span></dt><dd><p>haslo inicjatora</p>
+</dd>
+<dt>indeks<span class="classifier">int</span></dt><dd><p>indeks inicjatora jeżeli jest studentem</p>
+</dd>
+</dl>
+<dl class="exception">
+<dt id="inicjatorzy.models.Inicjator.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.DoesNotExist" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="inicjatorzy.models.Inicjator.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.MultipleObjectsReturned" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="inicjatorzy.models.Inicjator.Role">
+<em class="property">class </em><code class="sig-name descname">Role</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.Role" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.enums.TextChoices</span></code></p>
+<p>Role jakie możę przyjąć inicjator</p>
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.Role.OSOBA_OPINIUJACA">
+<code class="sig-name descname">OSOBA_OPINIUJACA</code><em class="property"> = 'OO'</em><a class="headerlink" href="#inicjatorzy.models.Inicjator.Role.OSOBA_OPINIUJACA" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.Role.STUDENT">
+<code class="sig-name descname">STUDENT</code><em class="property"> = 'ST'</em><a class="headerlink" href="#inicjatorzy.models.Inicjator.Role.STUDENT" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.email">
+<code class="sig-name descname">email</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.email" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.models.Inicjator.extract_indeks">
+<code class="sig-name descname">extract_indeks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.models.Inicjator.extract_indeks" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.models.Inicjator.get_rola_display">
+<code class="sig-name descname">get_rola_display</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.CharField: rola&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.models.Inicjator.get_rola_display" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.haslo">
+<code class="sig-name descname">haslo</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.haslo" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.id" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.imie">
+<code class="sig-name descname">imie</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.imie" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.indeks">
+<code class="sig-name descname">indeks</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.indeks" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.models.Inicjator.isNum">
+<code class="sig-name descname">isNum</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.models.Inicjator.isNum" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Funkcja sprawdza czy indeks jest</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.nazwisko">
+<code class="sig-name descname">nazwisko</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.nazwisko" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#inicjatorzy.models.Inicjator.objects" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.rola">
+<code class="sig-name descname">rola</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.rola" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.models.Inicjator.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.models.Inicjator.save" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Save the current instance. Override this in a subclass if you want to
+control the saving process.</p>
+<p>The «force_insert» and «force_update» parameters can be used to insist
+that the „save” must be an SQL insert or update (or equivalent for
+non-SQL backends), respectively. Normally, they should not be set.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="inicjatorzy.models.Inicjator.zamiennik_set">
+<code class="sig-name descname">zamiennik_set</code><a class="headerlink" href="#inicjatorzy.models.Inicjator.zamiennik_set" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="inicjatorzy-admin-module">
-<h2>inicjatorzy.admin module<a class="headerlink" href="#inicjatorzy-admin-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-inicjatorzy.tests">
+<span id="inicjatorzy-tests"></span><h2>inicjatorzy.tests<a class="headerlink" href="#module-inicjatorzy.tests" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<dl class="class">
+<dt id="inicjatorzy.tests.TestModels">
+<em class="property">class </em><code class="sig-prename descclassname">inicjatorzy.tests.</code><code class="sig-name descname">TestModels</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.tests.TestModels" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<dl class="method">
+<dt id="inicjatorzy.tests.TestModels.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.tests.TestModels.setUp" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.tests.TestModels.test_czy_liczba">
+<code class="sig-name descname">test_czy_liczba</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.tests.TestModels.test_czy_liczba" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.tests.TestModels.test_ustaw_indeks">
+<code class="sig-name descname">test_ustaw_indeks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.tests.TestModels.test_ustaw_indeks" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.tests.TestModels.test_ustaw_indeks_bez_maila">
+<code class="sig-name descname">test_ustaw_indeks_bez_maila</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.tests.TestModels.test_ustaw_indeks_bez_maila" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="inicjatorzy.tests.TestModels.test_ustaw_indeks_błedny">
+<code class="sig-name descname">test_ustaw_indeks_błedny</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.tests.TestModels.test_ustaw_indeks_błedny" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="inicjatorzy-apps-module">
-<h2>inicjatorzy.apps module<a class="headerlink" href="#inicjatorzy-apps-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="inicjatorzy-forms-module">
-<h2>inicjatorzy.forms module<a class="headerlink" href="#inicjatorzy-forms-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="inicjatorzy-models-module">
-<h2>inicjatorzy.models module<a class="headerlink" href="#inicjatorzy-models-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="inicjatorzy-tests-module">
-<h2>inicjatorzy.tests module<a class="headerlink" href="#inicjatorzy-tests-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="inicjatorzy-views-module">
-<h2>inicjatorzy.views module<a class="headerlink" href="#inicjatorzy-views-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-inicjatorzy.views">
+<span id="inicjatorzy-views"></span><h2>inicjatorzy.views<a class="headerlink" href="#module-inicjatorzy.views" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<dl class="function">
+<dt id="inicjatorzy.views.inicjator_create_view">
+<code class="sig-prename descclassname">inicjatorzy.views.</code><code class="sig-name descname">inicjator_create_view</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#inicjatorzy.views.inicjator_create_view" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
 </div>
 </div>
 
@@ -82,7 +238,7 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Zamiennik</a></h1>
+<h1 class="logo"><a href="index.html">Zamienniki PWR</a></h1>
 
 
 
@@ -91,21 +247,33 @@
 
 
 
-<h3>Navigation</h3>
+<h3>Nawigacja</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="zamienniki.html">zamienniki</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">inicjatorzy package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#zobacz">Zobacz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-inicjatorzy.models">inicjatorzy.models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-inicjatorzy.tests">inicjatorzy.tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-inicjatorzy.views">inicjatorzy.views</a></li>
+</ul>
+</li>
+</ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="zamienniki.html" title="poprzedni rozdział">zamienniki</a></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
+      <input type="submit" value="Szukaj" />
     </form>
     </div>
 </div>

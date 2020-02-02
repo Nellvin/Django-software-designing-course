@@ -1,13 +1,6 @@
 pages package
 =============
 
-Subpackages
------------
-
-.. toctree::
-
-   pages.migrations
-
 Submodules
 ----------
 

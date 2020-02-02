@@ -19,11 +19,14 @@ class Zamiennik(models.Model):
     Obiekty tej klasy będą rozpatrywane jako propozycje zamienników kursów na studiach.
     Przy tworzeniu automatycznie ich status jest ustawiany na *Oczekujący*
 
-    Args:
-        statusZamiennika: reprezentuje w jakim momencie rozpatrywania znajduje sie zamiennik
-        inicjator: osoba, która zaproponowała dany zamiennik
-        kursZamieniany: kurs jaki zamiennik ma zamieniać
-        kursyZamiennika: kursy, które które wchodzą w skład zamiennika
+    :param statusZamiennika: reprezentuje w jakim momencie rozpatrywania znajduje sie zamiennik
+    :type statusZamiennika: Status
+    :param inicjator: osoba, która zaproponowała dany zamiennik
+    :type inicjator: Inicjator
+    :param kursZamieniany: kurs jaki zamiennik ma zamieniać
+    :type kursZamieniany: Kurs
+    :param kursyZamiennika: kursy, które które wchodzą w skład zamiennika
+    :type kursyZamiennika: Kurs []
     """
     class Status(models.TextChoices):
         """Emumerator statsu zamiennika"""
@@ -58,7 +61,10 @@ class Zamiennik(models.Model):
         )
 
     def zaakceptuj_zamiennik(self):
-        """Funkcja powoduje zmiane status zamiennika na status zaakceptowany"""
+        """Funkcja powoduje zmiane status zamiennika na status zaakceptowany
+
+            :returns: wartość bool w zależności od powodzenia operacji
+        """
 
         self.statusZamiennika = 'AKCP'
         try:
@@ -68,7 +74,10 @@ class Zamiennik(models.Model):
         return True
 
     def odrzuc_zamiennik(self):
-        """Funkcja powoduje zmiane status zamiennika na status odrzucony"""
+        """Funkcja powoduje zmiane status zamiennika na status odrzucony
+
+            :returns: wartość bool w zależności od powodzenia operacji
+        """
         self.statusZamiennika = 'ODRZ'
         try:
             self.save()
@@ -81,21 +90,28 @@ class Zamiennik(models.Model):
 
 
     def sumaECTS(self):
-        """Funkcja zwraca sume ECTS kursów wchodzących w skład zamiennika"""
+        """Funkcja zwraca sume ECTS kursów wchodzących w skład zamiennika
+
+            :returns: suma puntków ects kursów zamiennika
+        """
         sumECTS = self.kursyZamiennika.aggregate(Sum('ECTS'))['ECTS__sum']
         if sumECTS is None:
             return 0
         return sumECTS
 
     def getFormaZaliczenia(self):
-        """Funkcja zwraca forme zaliczenai kursów wchodzących w skład zamiennika"""
+        """Funkcja zwraca forme zaliczenai kursów wchodzących w skład zamiennika
+        """
         forma = self.kursyZamiennika.first().get_formaZaliczenia_display()
         if forma is None:
             return ""
         return forma
 
     def getZZU(self):
-        """Funkcja zwraca sumę godzin trwania kursów wchodzących w skład zamiennika"""
+        """Funkcja zwraca sumę godzin trwania kursów wchodzących w skład zamiennika
+
+            :returns: sume godzin kursów zmiennika
+        """
         ZZU = self.kursyZamiennika.aggregate(Sum('liczbaGodzin'))['liczbaGodzin__sum']
         if ZZU is None:
             return 0
@@ -113,3 +129,5 @@ class Zamiennik(models.Model):
         stopen_studiow = self.kursyZamiennika.first().planstudiow.get_stpienStudiow_display()
         return stopen_studiow
     
+
+    # <input type="submit" id="save_button3" class="zamiennk_buttons_red butt3" name="akcept" value="akceptuj">

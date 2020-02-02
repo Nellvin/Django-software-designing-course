@@ -1,12 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="024835c6-a0a8-4bde-9da9-fb61ab96a30e" name="Default Changelist" comment="">
+    <list default="true" id="ba42b5e0-13e0-44e4-ab72-150f2fdf6d3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myenv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myenv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/templates/inicjatorzy/inicjator_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/inicjatorzy/templates/inicjatorzy/inicjator_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inicjatorzy/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/inicjatorzy.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/inicjatorzy.migrations.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/kursy.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/kursy.migrations.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/manage.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/modules.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/pages.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/pages.migrations.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/planstudiow.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/planstudiow.migrations.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/zamiennikProjekt.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/zamienniki.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/doctrees/zamienniki.migrations.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/inicjatorzy.migrations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/inicjatorzy.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/kursy.migrations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/kursy.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/manage.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/pages.migrations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/pages.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/planstudiow.migrations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/planstudiow.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/zamiennikProjekt.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/zamienniki.migrations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_sources/zamienniki.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/underscore-1.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/_static/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/inicjatorzy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/inicjatorzy.migrations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/kursy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/kursy.migrations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/manage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/pages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/pages.migrations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/planstudiow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/planstudiow.migrations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/zamiennikProjekt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/zamienniki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/_build/html/zamienniki.migrations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/inicjatorzy.migrations.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/inicjatorzy.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/kursy.migrations.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/kursy.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/manage.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/modules.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/pages.migrations.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/pages.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/planstudiow.migrations.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/planstudiow.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/zamiennikProjekt.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/zamienniki.migrations.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/zamienniki.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/____init_____8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/____init_____8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/admin_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/admin_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/apps_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/apps_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d1/d80/namespacezamienniki_1_1views.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d3/d9a/____init_____8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d3/d9a/____init_____8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d3/da2/models_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d3/da2/models_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d5/de7/apps_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d5/de7/apps_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d5/df8/namespacezamienniki_1_1admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d8/d54/manage_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d8/d94/tests_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d8/d94/tests_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/d8/dca/namespacezamienniki_1_1tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/da/d7c/admin_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/da/d7c/admin_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/da/d87/namespacezamienniki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/da/df4/namespacemanage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/db/d1e/views_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/db/d1e/views_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/dc/d02/namespacezamienniki_1_1models.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/dd/d84/namespacezamienniki_1_1apps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/manage_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/models_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/models_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespacemanage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespacezamienniki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespacezamienniki_1_1admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespacezamienniki_1_1apps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespacezamienniki_1_1models.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespacezamienniki_1_1tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/namespacezamienniki_1_1views.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/all_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/files_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/namespaces_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/namespaces_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/search/searchdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/tests_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/tests_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/views_8py.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/views_8py_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inicjatorzy/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/migrations/0002_auto_20200114_1803.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/migrations/0003_auto_20200114_2256.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/migrations/0004_auto_20200121_1944.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/migrations/0005_auto_20200126_1735.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inicjatorzy/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inicjatorzy/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/inicjatorzy/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/kursy/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/migrations/0002_auto_20200115_1539.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/migrations/0003_auto_20200115_1539.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/migrations/0004_auto_20200126_1819.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/migrations/0005_auto_20200128_1607.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kursy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/kursy/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/____init_____8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/admin_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/apps_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d1/d80/namespacezamienniki_1_1views.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d3/d9a/____init_____8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d3/da2/models_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d5/de7/apps_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d5/df8/namespacezamienniki_1_1admin.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d8/d54/manage_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d8/d94/tests_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/d8/dca/namespacezamienniki_1_1tests.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/da/d7c/admin_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/da/d87/namespacezamienniki.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/da/df4/namespacemanage.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/db/d1e/views_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/dc/d02/namespacezamienniki_1_1models.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/dd/d84/namespacezamienniki_1_1apps.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/files.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/longtable_doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/manage_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/models_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespacemanage.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespaces.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespacezamienniki.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespacezamienniki_1_1admin.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespacezamienniki_1_1apps.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespacezamienniki_1_1models.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespacezamienniki_1_1tests.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/namespacezamienniki_1_1views.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/tabu_doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/tests_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/latex/views_8py.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/planstudiow/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/planstudiow/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/py_filter.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/kurs/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamiennikProjekt/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/zamiennikProjekt/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/W08_20.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/doctrees/conf.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/doctrees/modules.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/doctrees/zamienniki.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/doctrees/zamienniki.migrations.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_sources/conf.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_sources/modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_sources/zamienniki.migrations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_sources/zamienniki.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/translations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/underscore-1.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/_static/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/conf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/zamienniki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/_build/html/zamienniki.migrations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/conf.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/modules.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/zamienniki.migrations.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/docs/zamienniki.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0002_auto_20200106_1704.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0003_auto_20200106_1732.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0004_zamiennik_kartakursu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0005_zamiennik_inicjator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0006_auto_20200115_1535.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0007_auto_20200115_1537.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0008_auto_20200125_1240.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0009_auto_20200125_1248.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0010_zamiennik_kursyzamiennikia.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0011_auto_20200125_1315.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0012_auto_20200125_1317.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0013_auto_20200125_1429.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0014_zamiennik_planstudiow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/0015_remove_zamiennik_planstudiow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/zamienniki/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/zamienniki/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zamienniki/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/zamienniki/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/templates/pdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/zamienniki/templates/pdf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/templates/zamiennik_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/zamienniki/templates/zamiennik_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zamienniki/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/zamienniki/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zamiennik.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/zamiennik.sublime-workspace" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +320,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/docs/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -29,27 +348,16 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="myenv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myenv" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,55 +376,71 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="024835c6-a0a8-4bde-9da9-fb61ab96a30e" name="Default Changelist" comment="" />
-      <created>1580075962495</created>
+      <changelist id="ba42b5e0-13e0-44e4-ab72-150f2fdf6d3f" name="Default Changelist" comment="" />
+      <created>1580493560615</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580075962495</updated>
-      <workItem from="1580075968595" duration="346000" />
-      <workItem from="1580076482016" duration="116000" />
+      <updated>1580493560615</updated>
+      <workItem from="1580493569853" duration="610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462000" />
+    <option name="totallyTimeSpent" value="610000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
       <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
       <window_info id="UI Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
       <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/docs/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -4,16 +4,108 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"paddi",
+				"padding-top\tproperty"
+			],
+			[
+				"ku",
+				"kursZamieniany"
+			],
+			[
+				"kur",
+				"kursZamieniany"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"Tes",
+				"TestCase"
+			],
+			[
+				"forma",
+				"FormaZaliczenia"
+			],
+			[
+				"ch",
+				"CharField"
+			],
+			[
+				"pad",
+				"padding-left\tproperty"
+			],
+			[
+				"bot",
+				"border-bottom\tproperty"
+			],
+			[
+				"oczek",
+				"oczekujący"
+			],
+			[
+				"bo",
+				"bottom\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"bor",
+				"border\tproperty"
+			],
+			[
+				"na",
+				"nazwiskoI"
+			],
+			[
+				"imie",
+				"imieI"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"ma",
+				"margin-left\tproperty"
+			],
+			[
+				"height",
+				"max-height\tproperty"
+			],
+			[
+				"paddin",
+				"padding\tproperty"
+			],
+			[
+				"E",
+				"liczbaECTS"
+			],
+			[
+				"kurs",
+				"kursZamieniany"
+			],
+			[
 				"lef",
 				"margin-left\tproperty"
 			],
 			[
 				"font",
 				"font-family\tproperty"
-			],
-			[
-				"bor",
-				"border-color\tproperty"
 			],
 			[
 				"bord",
@@ -32,10 +124,6 @@
 				"WYKLAD"
 			],
 			[
-				"forma",
-				"FormaZajec"
-			],
-			[
 				"de",
 				"default"
 			],
@@ -52,14 +140,6 @@
 				"forms"
 			],
 			[
-				"mar",
-				"margin\tproperty"
-			],
-			[
-				"pad",
-				"padding\tproperty"
-			],
-			[
 				"padding",
 				"padding-left\tproperty"
 			]
@@ -67,104 +147,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/templates/base.html",
-			"settings":
-			{
-				"buffer_size": 442,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/kursy/views.py",
-			"settings":
-			{
-				"buffer_size": 939,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/inicjatorzy/templates/inicjatorzy/inicjator_create.html",
-			"settings":
-			{
-				"buffer_size": 214,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/inicjatorzy/forms.py",
-			"settings":
-			{
-				"buffer_size": 938,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/inicjatorzy/views.py",
-			"settings":
-			{
-				"buffer_size": 340,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/zamiennikProjekt/urls.py",
-			"settings":
-			{
-				"buffer_size": 1063,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/kursy/models.py",
-			"settings":
-			{
-				"buffer_size": 1095,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/inicjatorzy/models.py",
-			"settings":
-			{
-				"buffer_size": 625,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/zamienniki/models.py",
-			"settings":
-			{
-				"buffer_size": 1833,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/inicjatorzy/tests.py",
-			"settings":
-			{
-				"buffer_size": 60,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/kursy/static/style.css",
-			"settings":
-			{
-				"buffer_size": 1296,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -200,30 +182,55 @@
 	[
 		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv",
 		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/templates",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/templates/inicjatorzy",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/static",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/templates",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/templates/kursy",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/pages",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/pages/templates",
 		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamiennikProjekt"
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/views.py",
 		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/forms.py",
-		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/static/style.css"
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/models.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/templates/pdf.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/templates/zamiennik_details.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/pages/__init__.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/models.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/tests.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/forms.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/tests.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/planstudiow/models.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/views.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/views.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/templates/list_zamienniki.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/pages/templates/home.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/pages/views.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/models.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamiennikProjekt/urls.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamiennikProjekt/settings.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/templates/kursy/kurs_detail.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/templates/zamienniki/list_zamienniki.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/templates/zamienniki/zamiennik_details.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/zamienniki/templates/zamienniki/pdf.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/templates/inicjatorzy/inicjator_create.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/static/style.css",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/kursy/templates/kursy/kurs_create.html",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/db.sqlite3",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/planstudiow/admin.py",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/inicjatorzy/templates/inicjatorzy/srkóconyHTML",
+		"/C/Users/Filip/Documents/Studia 2019-2020/PO/Project/myenv/src/templates/base.html"
 	],
 	"find":
 	{
-		"height": 59.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 116.0,
 		"where_history":
 		[
+			"models.py",
+			""
 		]
 	},
 	"find_state":
@@ -231,6 +238,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"{{",
+			"liczbaECTS",
+			"first",
+			"STATIC_ROO",
+			"kurs",
+			"\t",
+			"8",
+			"home.html",
+			"home.htm",
+			"\"\n",
+			"\t",
+			"red",
+			"bold",
+			"> ",
+			"center",
+			"red",
+			"<tr>\n\t\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t\tSposób zaliczenia: {{zaliczenie}}\n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t</tr>",
+			"instance",
+			"text",
+			";\n",
+			">\n",
+			"skróconyHTML",
+			"import",
+			"Inicjator",
+			"css",
 			";\n",
 			"()\n",
 			"left"
@@ -241,6 +273,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"    ",
+			"instance"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -251,324 +285,8 @@
 	"groups":
 	[
 		{
-			"selected": 10,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/templates/base.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 442,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								245,
-								245
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/kursy/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 939,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								281,
-								281
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/inicjatorzy/templates/inicjatorzy/inicjator_create.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 214,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								177,
-								188
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/inicjatorzy/forms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 938,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								544,
-								544
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/inicjatorzy/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 340,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								105,
-								126
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/zamiennikProjekt/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1063,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								999,
-								999
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/kursy/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1095,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1041,
-								1041
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/inicjatorzy/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 625,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								479,
-								504
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/zamienniki/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1833,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1212,
-								924
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 404.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/inicjatorzy/tests.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 60,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								32,
-								32
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/kursy/static/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1038,
-								1038
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1132.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -578,7 +296,7 @@
 	},
 	"input":
 	{
-		"height": 40.0
+		"height": 44.0
 	},
 	"layout":
 	{
@@ -649,7 +367,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 231.0,
+	"side_bar_width": 306.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -1,41 +1,11 @@
-inicjatorzy package
+inicjatorzy 
 ===================
 
-Subpackages
------------
-
-.. toctree::
-
-   inicjatorzy.migrations
-
-Submodules
+Zobacz
 ----------
 
-inicjatorzy.admin module
-------------------------
 
-.. automodule:: inicjatorzy.admin
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-inicjatorzy.apps module
------------------------
-
-.. automodule:: inicjatorzy.apps
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-inicjatorzy.forms module
-------------------------
-
-.. automodule:: inicjatorzy.forms
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-inicjatorzy.models module
+inicjatorzy.models 
 -------------------------
 
 .. automodule:: inicjatorzy.models
@@ -43,15 +13,8 @@ inicjatorzy.models module
    :undoc-members:
    :show-inheritance:
 
-inicjatorzy.tests module
-------------------------
 
-.. automodule:: inicjatorzy.tests
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-inicjatorzy.views module
+inicjatorzy.views 
 ------------------------
 
 .. automodule:: inicjatorzy.views
@@ -60,10 +23,4 @@ inicjatorzy.views module
    :show-inheritance:
 
 
-Module contents
----------------
 
-.. automodule:: inicjatorzy
-   :members:
-   :undoc-members:
-   :show-inheritance:

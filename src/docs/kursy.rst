@@ -1,13 +1,6 @@
 kursy package
 =============
 
-Subpackages
------------
-
-.. toctree::
-
-   kursy.migrations
-
 Submodules
 ----------
 

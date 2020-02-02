@@ -5,6 +5,9 @@ from django.db.models import Sum
 from .models import Zamiennik
 
 def pdf_view(request, id):
+    """
+    Renderowanie dwóch pdf w celu porównania kart kursu zamienianego i tzw zamiennika
+    """
     zamienniki = Zamiennik.objects.get(id=id)
     ID=str("0000000"+str(id)) 
     file1 = zamienniki.kursZamieniany.kartaKursu
@@ -17,7 +20,9 @@ def pdf_view(request, id):
     return render(request, "pdf.html", context)
 
 def list_zamienniki(request):
-    
+    """
+    Renderowanie listy zamienników
+    """
     query_set = Zamiennik.objects.filter(statusZamiennika='OCZEK')
     context = {
         "obj_list" : query_set
@@ -25,6 +30,10 @@ def list_zamienniki(request):
     return render(request, "list_zamienniki.html",context)
 
 def zamiennik_szczegoly(request,id):
+    """
+    Renderowanie szczegółów zamiennika umożliwiający podjęcie decyzji o 
+    akceptacji lub odrzuceniu propozycji zamiennika 
+    """
     instance = Zamiennik.objects.get(id=id)
     if 'oczek' in request.POST:
     	instance.statusZamiennika= 'OCZEK'

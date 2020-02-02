@@ -1,50 +1,21 @@
-zamienniki package
-==================
+zamienniki 
+==========
 
-Subpackages
------------
-
-.. toctree::
-
-   zamienniki.migrations
-
-Submodules
+Zobacz
 ----------
 
-zamienniki.admin module
------------------------
 
-.. automodule:: zamienniki.admin
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-zamienniki.apps module
-----------------------
-
-.. automodule:: zamienniki.apps
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-zamienniki.models module
-------------------------
+zamienniki.models 
+-----------------
 
 .. automodule:: zamienniki.models
    :members:
    :undoc-members:
    :show-inheritance:
 
-zamienniki.tests module
------------------------
 
-.. automodule:: zamienniki.tests
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-zamienniki.views module
------------------------
+zamienniki.views 
+----------------
 
 .. automodule:: zamienniki.views
    :members:
@@ -52,10 +23,3 @@ zamienniki.views module
    :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: zamienniki
-   :members:
-   :undoc-members:
-   :show-inheritance:

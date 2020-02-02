@@ -1,13 +1,6 @@
 planstudiow package
 ===================
 
-Subpackages
------------
-
-.. toctree::
-
-   planstudiow.migrations
-
 Submodules
 ----------
 

@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
   <head>
     <meta charset="utf-8" />
-    <title>planstudiow package &#8212; Zamiennik 1 documentation</title>
+    <title>planstudiow package &#8212; Zamienniki PWR 1.0 - dokumentacja</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -12,8 +12,9 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Indeks" href="genindex.html" />
+    <link rel="search" title="Szukaj" href="search.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -31,40 +32,179 @@
           <div class="body" role="main">
             
   <div class="section" id="planstudiow-package">
-<h1>planstudiow package<a class="headerlink" href="#planstudiow-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="planstudiow.migrations.html">planstudiow.migrations package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="planstudiow.migrations.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="planstudiow.migrations.html#planstudiow-migrations-0001-initial-module">planstudiow.migrations.0001_initial module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="planstudiow.migrations.html#module-contents">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+<h1>planstudiow package<a class="headerlink" href="#planstudiow-package" title="Stały odnośnik do tego nagłówka">¶</a></h1>
 <div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Stały odnośnik do tego nagłówka">¶</a></h2>
 </div>
-<div class="section" id="planstudiow-admin-module">
-<h2>planstudiow.admin module<a class="headerlink" href="#planstudiow-admin-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-planstudiow.admin">
+<span id="planstudiow-admin-module"></span><h2>planstudiow.admin module<a class="headerlink" href="#module-planstudiow.admin" title="Stały odnośnik do tego nagłówka">¶</a></h2>
 </div>
-<div class="section" id="planstudiow-apps-module">
-<h2>planstudiow.apps module<a class="headerlink" href="#planstudiow-apps-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-planstudiow.apps">
+<span id="planstudiow-apps-module"></span><h2>planstudiow.apps module<a class="headerlink" href="#module-planstudiow.apps" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<dl class="class">
+<dt id="planstudiow.apps.PlanstudiowConfig">
+<em class="property">class </em><code class="sig-prename descclassname">planstudiow.apps.</code><code class="sig-name descname">PlanstudiowConfig</code><span class="sig-paren">(</span><em class="sig-param">app_name</em>, <em class="sig-param">app_module</em><span class="sig-paren">)</span><a class="headerlink" href="#planstudiow.apps.PlanstudiowConfig" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="attribute">
+<dt id="planstudiow.apps.PlanstudiowConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'planstudiow'</em><a class="headerlink" href="#planstudiow.apps.PlanstudiowConfig.name" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="planstudiow-models-module">
-<h2>planstudiow.models module<a class="headerlink" href="#planstudiow-models-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-planstudiow.models">
+<span id="planstudiow-models-module"></span><h2>planstudiow.models module<a class="headerlink" href="#module-planstudiow.models" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+<dl class="class">
+<dt id="planstudiow.models.PlanStudiow">
+<em class="property">class </em><code class="sig-prename descclassname">planstudiow.models.</code><code class="sig-name descname">PlanStudiow</code><span class="sig-paren">(</span><em class="sig-param">id</em>, <em class="sig-param">stpienStudiow</em>, <em class="sig-param">formaStudiow</em>, <em class="sig-param">liczbaSemestrow</em>, <em class="sig-param">jezykStudiow</em>, <em class="sig-param">specjalnosc</em>, <em class="sig-param">obowiazujeOd</em><span class="sig-paren">)</span><a class="headerlink" href="#planstudiow.models.PlanStudiow" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="exception">
+<dt id="planstudiow.models.PlanStudiow.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.DoesNotExist" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="planstudiow.models.PlanStudiow.FormaS">
+<em class="property">class </em><code class="sig-name descname">FormaS</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.FormaS" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.enums.TextChoices</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.FormaS.NIESTACJONARNE">
+<code class="sig-name descname">NIESTACJONARNE</code><em class="property"> = 'NS'</em><a class="headerlink" href="#planstudiow.models.PlanStudiow.FormaS.NIESTACJONARNE" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.FormaS.STACJONARNE">
+<code class="sig-name descname">STACJONARNE</code><em class="property"> = 'S'</em><a class="headerlink" href="#planstudiow.models.PlanStudiow.FormaS.STACJONARNE" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="planstudiow.models.PlanStudiow.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.MultipleObjectsReturned" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="planstudiow.models.PlanStudiow.Stopien">
+<em class="property">class </em><code class="sig-name descname">Stopien</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.Stopien" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.enums.TextChoices</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.Stopien.DRUGI">
+<code class="sig-name descname">DRUGI</code><em class="property"> = 'D'</em><a class="headerlink" href="#planstudiow.models.PlanStudiow.Stopien.DRUGI" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.Stopien.PIERWSZY">
+<code class="sig-name descname">PIERWSZY</code><em class="property"> = 'P'</em><a class="headerlink" href="#planstudiow.models.PlanStudiow.Stopien.PIERWSZY" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.formaStudiow">
+<code class="sig-name descname">formaStudiow</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.formaStudiow" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="planstudiow.models.PlanStudiow.get_formaStudiow_display">
+<code class="sig-name descname">get_formaStudiow_display</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.CharField: formaStudiow&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#planstudiow.models.PlanStudiow.get_formaStudiow_display" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="planstudiow.models.PlanStudiow.get_next_by_obowiazujeOd">
+<code class="sig-name descname">get_next_by_obowiazujeOd</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateField: obowiazujeOd&gt;</em>, <em class="sig-param">is_next=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#planstudiow.models.PlanStudiow.get_next_by_obowiazujeOd" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="planstudiow.models.PlanStudiow.get_previous_by_obowiazujeOd">
+<code class="sig-name descname">get_previous_by_obowiazujeOd</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateField: obowiazujeOd&gt;</em>, <em class="sig-param">is_next=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#planstudiow.models.PlanStudiow.get_previous_by_obowiazujeOd" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="planstudiow.models.PlanStudiow.get_stpienStudiow_display">
+<code class="sig-name descname">get_stpienStudiow_display</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.CharField: stpienStudiow&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#planstudiow.models.PlanStudiow.get_stpienStudiow_display" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.id" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.jezykStudiow">
+<code class="sig-name descname">jezykStudiow</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.jezykStudiow" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.kurs_set">
+<code class="sig-name descname">kurs_set</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.kurs_set" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="planstudiow-tests-module">
-<h2>planstudiow.tests module<a class="headerlink" href="#planstudiow-tests-module" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.liczbaSemestrow">
+<code class="sig-name descname">liczbaSemestrow</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.liczbaSemestrow" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#planstudiow.models.PlanStudiow.objects" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.obowiazujeOd">
+<code class="sig-name descname">obowiazujeOd</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.obowiazujeOd" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.specjalnosc">
+<code class="sig-name descname">specjalnosc</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.specjalnosc" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="planstudiow.models.PlanStudiow.stpienStudiow">
+<code class="sig-name descname">stpienStudiow</code><a class="headerlink" href="#planstudiow.models.PlanStudiow.stpienStudiow" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
-<div class="section" id="planstudiow-views-module">
-<h2>planstudiow.views module<a class="headerlink" href="#planstudiow-views-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-planstudiow.tests">
+<span id="planstudiow-tests-module"></span><h2>planstudiow.tests module<a class="headerlink" href="#module-planstudiow.tests" title="Stały odnośnik do tego nagłówka">¶</a></h2>
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-planstudiow.views">
+<span id="planstudiow-views-module"></span><h2>planstudiow.views module<a class="headerlink" href="#module-planstudiow.views" title="Stały odnośnik do tego nagłówka">¶</a></h2>
+</div>
+<div class="section" id="module-planstudiow">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-planstudiow" title="Stały odnośnik do tego nagłówka">¶</a></h2>
 </div>
 </div>
 
@@ -75,7 +215,7 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Zamiennik</a></h1>
+<h1 class="logo"><a href="index.html">Zamienniki PWR</a></h1>
 
 
 
@@ -84,7 +224,11 @@
 
 
 
-<h3>Navigation</h3>
+<h3>Nawigacja</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="models/z.html">All about me</a></li>
+</ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
@@ -94,11 +238,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
+  <h3 id="searchlabel">Szybkie wyszukiwanie</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
+      <input type="submit" value="Szukaj" />
     </form>
     </div>
 </div>

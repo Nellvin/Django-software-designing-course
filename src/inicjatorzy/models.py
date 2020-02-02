@@ -3,7 +3,33 @@ from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 class Inicjator(models.Model):
+    """
+        Reprezentacja osoby, która inicjuje zamiennik
+
+        Osoba ta możę być studentem albo osobą opiniującą. Osoba opiniująca jest zdolna do zmiany 
+        statusu zamiennika oraz tworznia propozycji zamiennika. Student jest zdolny jedynie do
+        tworznia propozycji zamiennika  
+
+        Attributes
+        ----------
+        imie : str
+            imie inicjatora
+        nazwisko : str
+            nazwisko inicjatora
+        email : str
+            email uniwersytecki inicjatora
+        haslo : str
+            haslo inicjatora
+        indeks : int
+            indeks inicjatora jeżeli jest studentem
+
+        
+
+    """
     class Role(models.TextChoices):
+        """
+        Role jakie możę przyjąć inicjator
+        """
         STUDENT = 'ST', _('Student')
         OSOBA_OPINIUJACA = 'OO', _('Osoba Opiniująca')
 
@@ -36,7 +62,7 @@ class Inicjator(models.Model):
         indeks = self.email[0:6]
         if(self.isNum(indeks)):
             return indeks
-        pass
+        return ''
 
     def __str__(self):
     	return self.imie + ' ' + self.nazwisko

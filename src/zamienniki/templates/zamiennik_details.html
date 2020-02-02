@@ -74,7 +74,7 @@
 					<label id="actionResult" class="actionResult"></label>
 					<form action="../{{instance.id}}/" method="POST">{% csrf_token %}
 						
-					<input type="submit" id="save_button1" class="zamiennk_buttons_red butt1" name="oczek" value="oczekujący">
+					
 					<input type="submit" id="save_button2" class="zamiennk_buttons_red butt2" name="odrz" value="odrzuć">
 					<input type="submit" id="save_button3" class="zamiennk_buttons_red butt3" name="akcept" value="akceptuj">
 					</form>
@@ -148,7 +148,7 @@
 		var myInput = document.getElementById("status");
 
 		if(myInput.textContent.trim()== 'Status: Oczekujący'){
-			document.getElementById("save_button2").style.visibility = "hidden";
+			document.getElementById("save_button1").style.visibility = "hidden";
 			document.getElementById("actionResult").style.visibility = "hidden";
 		}else if(myInput.textContent.trim()== 'Status: Zaakceptowany'){
 			document.getElementById("actionResult").textContent = "Zaaktualizowano status zamiennika: zaakceptowany"

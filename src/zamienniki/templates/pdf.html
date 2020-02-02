@@ -25,6 +25,9 @@
 		<div class="centerdiv" style="padding-left:50px;">
 		 	<iframe  src="{% static file1 %}" width="45%" height="500px"></iframe>
 		 	<iframe  src="{% static file2 %}" width="45%" height="500px"></iframe>
+			<a href='{% url "zamiennik_detail" id=id %}'>
+				<button class="zamiennk_buttons_red" style="margin-left: 450px;">Powrót</button>
+			</a>
 		</div>
 	</div>	
 </body>
