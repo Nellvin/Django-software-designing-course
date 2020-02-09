@@ -22,22 +22,13 @@
 			<p>   &nbsp;&nbsp;- Odrzucone</p>
 		</div>
 		<div class="centerdiv" >
-			<table class="zamiennik_short_desc">
-			
-				
-					
-						<tr>
-							<td>
+			<div class="zamienniki_row">
 					<p class="zamiennik_nazwa">{{nazwaK}}</p>
-							</td>
-							<td>
+
 					<p class="zamiennik_kod">{{kodK}}</p>
-							</td>
-							<td>
+				
 					<p class="zamiennik_inicjator">Inicjator: {{imieI}} {{nazwiskoI}} {{indeksI}}</p>
-							</td>
-						</tr>
-					</table>
+		</div>	
 					<table class="zamiennik_descrpit">
 						<tr>
 							<td>
@@ -72,12 +63,16 @@
 					</table>
 
 					<label id="actionResult" class="actionResult"></label>
-					<form action="../{{instance.id}}/" method="POST">{% csrf_token %}
+					<div style="display: inline;">
+					<form action="../{{instance.id}}/" class="buttons_zamiennik_details" method="POST">{% csrf_token %}
 						
 					
 					<input type="submit" id="save_button2" class="zamiennk_buttons_red butt2" name="odrz" value="odrzuć">
+					
 					<input type="submit" id="save_button3" class="zamiennk_buttons_red butt3" name="akcept" value="akceptuj">
 					</form>
+					</div>
+					<div style="clear:both;"></div>
 					<table class="tabZamiennikow">
 					<thead>
 						<tr>

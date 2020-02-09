@@ -1,5 +1,6 @@
 html{
-
+ width: 100%;
+ height: 100%;
 }
 a{
   text-decoration:none;
@@ -11,6 +12,8 @@ ul, li{
 body{
   margin: 0;
   font-family: arial;
+  height: 100%;
+  width: 100%;
 }
 p{
   padding: 5px;
@@ -53,6 +56,7 @@ tbody,tr{
   padding-top:7px;
 }
 .zamiennik_descrpit{
+  display: inline;
   margin: 15px;
   border-bottom: 0;
 }
@@ -119,18 +123,19 @@ label{
   width: 500px;
 }
 .zamiennk_buttons_red{
-  margin-left: 250px;
+  /*margin-left: 250px;*/
   background: #B32216;
   color: white;
   font-size: 18px;
   border-radius: 5px;
   width: 150px;
   height: 50px;
+
   /*float: right;*/
   /*position: sticky;*/
 
 }
-.butt1{
+/*.butt1{
   position: absolute;
   left: 650px;
   top: 100px;
@@ -144,14 +149,14 @@ label{
   position: absolute;
   left: 650px;
   top: 200px;
-}
+}*/
 .center{
   text-align: center;
 }
 .wraper{
-  float: left;
+  display: flex;
   width: 98%; 
-  height: 100%;
+  height: 77%;
   padding-left: 2%;
   padding-right: : 2%;
 }
@@ -159,6 +164,7 @@ label{
   
   padding: 10px;
 	width: 15%;
+  height: 95%;
 	background: #B32216;
 	align-content: left;
 	margin-right: 1%;
@@ -167,12 +173,32 @@ label{
 .centerdiv{
   padding: 15px;
 	width: 75%;
-  min-height: 100%;
+  height: 93%;
   background: white;
   border: 2px;
   border-color: lightgray;
   border-style: solid;
 }
+.scrool{
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+
+}
+.centerdiv::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.centerdiv::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.centerdiv::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 .centerdiv, .leftbar{
   display: block;
   border-radius: 8px;
@@ -191,21 +217,30 @@ label{
   border: solid 1px;
   border-color: gray;
 }
+.zamienniki_row{
+  display: flex;
+  padding: 30px 0; 
+  border-bottom: solid 1px gray;
+  margin-right: 2%;
+  color: black;
+}
 .zamiennik_nazwa{
-  width: 200px;
-  margin-left: 15px;
+  width: 30%;
 }
 .zamiennik_kod{
-  /*margin-left: 155px;*/
-  width: 300px
+  width: 20%
 }
 .zamiennik_inicjator{
-  width: 400px;
+  width: 50%;
   text-align: right;
 }
-.zamiennik_nazwa, .zamiennik_kod{
-  padding:35px; 
+
+.buttons_zamiennik_details{
+  display: inline;
 }
+
+
+
 
 @media (max-width: 600px) {
   .leftbar, .centerdiv {
